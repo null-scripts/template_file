@@ -1,7 +1,7 @@
-RegisterCommand("testcommand", function ()
-    TriggerClientEvent("null-template:client:clientprint", -1)
+RegisterCommand("printclient", function ()
+    TriggerClientEvent("null-template:client:clientprint", -1, 15)
 end)
 
-RegisterNetEvent("null-template:server:serverprint", function ()
-    print("Server Event")
+RegisterNetEvent("null-template:server:serverprint", function (num)
+    print("Server Event = " .. num)
 end)
