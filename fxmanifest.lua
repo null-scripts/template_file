@@ -23,7 +23,7 @@ server_scripts {
 }
 
 shared_scripts {
-    'config.lua',
+    'shared/config.lua',
     'locales/*.lua'
 }
 
@@ -35,3 +35,4 @@ escrow_ignore {
     'config.lua',
     'locales/*.lua'
 }
+
